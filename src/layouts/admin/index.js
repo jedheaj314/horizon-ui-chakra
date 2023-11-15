@@ -125,12 +125,6 @@ export default function Dashboard(props) {
 						<Portal>
 							<Box>
 								<Navbar
-									onOpen={onOpen}
-									logoText={'Horizon UI Dashboard PRO'}
-									brandText={getActiveRoute(routes)}
-									secondary={getActiveNavbar(routes)}
-									message={getActiveNavbarText(routes)}
-									fixed={fixed}
 									{...rest}
 								/>
 							</Box>
@@ -144,9 +138,6 @@ export default function Dashboard(props) {
 								</Switch>
 							</Box>
 						) : null}
-						<Box>
-							<Footer />
-						</Box>
 					</Box>
 				</SidebarContext.Provider>
 			</Box>
